@@ -32,10 +32,10 @@ export const ContactList = () => {
       {error && <b>{error}</b>}
       {filteredContacts && filteredContacts.length > 0 && (
         <ul className={css.list}>
-          {filteredContacts.map(({ name, phone, id }) => {
+          {filteredContacts.map(({ name, number, id }) => {
             return (
               <li className={css.item} name={name} key={id}>
-                {name}: {phone}
+                {name}: {number}
                 <button className={css.btn} onClick={() => handleDelete(id)}>
                   Delete
                 </button>

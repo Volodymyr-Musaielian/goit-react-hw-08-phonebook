@@ -30,6 +30,19 @@ function RegisterForm() {
     form.reset();
   };
 
+  // const handleSubmit = e => {
+  //   e.preventDefault();
+  //   const form = e.currentTarget;
+  //   dispatch(
+  //     register({
+  //       name: form.elements.name.value,
+  //       email: form.elements.email.value,
+  //       password: form.elements.password.value,
+  //     })
+  //   );
+  //   form.reset();
+  // };
+
   return (
     <div>
       <h1>Ragistration page</h1>
